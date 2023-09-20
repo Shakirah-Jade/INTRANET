@@ -1,0 +1,95 @@
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+  --primary1: #fff;
+  --primary2: #333;
+}
+
+/* Sidebar container */
+.sidebar {
+  position: relative;
+  top: 0;
+  left: 0px;
+  /* left: -250px; */
+  width: 200px;
+  height: 100%;
+  background-color: var(--primary1);
+  transition: left 0.3s ease-in-out;
+}
+
+/* Open sidebar */
+/* .sidebar.open {
+  position: relative;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background-color: var(--primary1);
+  transition: left 0.3s ease-in-out;
+} */
+
+/* Menu icon */
+.menu-icon {
+  padding: 10px;
+  /* cursor: pointer; */
+  color: var(--primary2);
+  display: inline-block; /* Add this to make the icon visible initially */
+}
+
+/* Menu items */
+.menu-items {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  color: var(--primary2);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+.menu-item:hover {
+  cursor: context-menu;
+  border-radius: 10px;
+  color: var(--primary1);
+  background-color: var(--primary2);
+}
+
+/* Font Awesome icons */
+.menu-item i {
+  margin-right: 10px;
+}
+
+/*Sub Folders*/
+.sidebar .dropping {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.sidebar .dropping {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.sidebar .subfolders {
+  height: 0;
+  overflow: hidden;
+}
+
+/*Active Menu Item*/
+#home.active {
+  background-color: red;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+}

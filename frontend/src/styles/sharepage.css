@@ -1,0 +1,102 @@
+/* App.css */
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+  --primary1: #fff;
+  --primary2: #333;
+}
+
+/* Style the page container */
+.sharepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  height: 50vh;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 1900px;
+  background-color: var(--primary1);
+}
+
+.sharepage .file-input-container {
+  margin-bottom: 10px;
+  background-color: #1aac83;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sharepage .container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sharepage h1 {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+/* Style the form */
+.sharepage form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sharepage label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.sharepage input[type="text"],
+.sharepage input[type="file"] {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sharepage button {
+  padding: 10px 20px;
+  background-color: #1aac83;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sharepage button:hover {
+  background-color: #1aac83;
+}
+
+/* Style the notification message */
+.sharepage .notification {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #1aac83;
+}
+
+/* Style the cancel button */
+.sharepage button[type="button"] {
+  /* background-color: #1aac83;
+    margin-top: 10px;
+    color: #fff;
+    margin-right: 10px; */
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #1aac83;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sharepage button[type="button"]:hover {
+  background-color: #1aac83;
+}

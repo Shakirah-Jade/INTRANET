@@ -1,17 +1,13 @@
 import React, { useState } from "react";
-////////
 import styled from "styled-components";
-//////////////
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { SidebarData } from "./SidebarData";
-import "../App.css";
 import { IconContext } from "react-icons/lib";
 
-///////////////////
+import { SidebarData } from "./SidebarData";
+import "../App.css";
 import SubMenu from "./SubMenu";
-//////////
 
 // function Navbar() {
 //   const [sidebar, setSidebar] = useState(false);
@@ -75,7 +71,7 @@ const SidebarNav = styled.nav`
   justify-content: center;
   position: fixed;
   top: 0;
-  left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
+  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
   z-index: 10;
 `;
@@ -91,15 +87,15 @@ const Navbar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-          <NavIcon to='#'>
+          <NavIcon to="#">
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
-            <NavIcon to='#'>
+            <NavIcon to="#">
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
             {SidebarData.map((item, index) => {
@@ -111,6 +107,5 @@ const Navbar = () => {
     </>
   );
 };
-
 
 export default Navbar;

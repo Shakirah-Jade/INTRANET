@@ -1,0 +1,81 @@
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+  --primary1: #fff;
+  --primary2: #333;
+}
+
+/* AddFolderDialog styles */
+.popup-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+}
+.popup-dialog h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.popup-dialog input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.popup-dialog button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.btn-add {
+  background-color: rgb(13, 127, 43);
+  color: var(--primary1);
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-add:hover {
+  background-color: rgb(7, 81, 27);
+  color: var(--primary1);
+}
+
+.btn-close {
+  background-color: rgb(235, 15, 15);
+  color: var(--primary1);
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-close:hover {
+  background-color: rgb(136, 15, 15);
+  color: var(--primary1);
+}
+
+body.active-popup {
+  overflow-y: hidden;
+}
+
+.popup,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1001;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+  z-index: 1000;
+}

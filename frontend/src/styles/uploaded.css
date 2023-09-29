@@ -1,0 +1,26 @@
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+  --primary1: #fff;
+  --primary2: #333;
+}
+
+.uploaded {
+  margin-top: 10px;
+  border-radius: 10px;
+  width: auto;
+  background-color: var(--primary1);
+}
+
+.uploaded h2 {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  align-content: center;
+}
+
+.uploaded .files {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  max-height: 100vh;
+}

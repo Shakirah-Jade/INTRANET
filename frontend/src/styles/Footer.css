@@ -1,0 +1,18 @@
+/* Footer.css */
+   .footer {
+    /* position: relative; */
+    position: relative;
+    top: 100px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .footer-item {
+    font-size: 18px;
+  }
+  

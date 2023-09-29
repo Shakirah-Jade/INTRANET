@@ -1,0 +1,87 @@
+/* FileUpload.css */
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+  --primary1: #fff;
+  --primary2: #333;
+}
+
+/* Container for the file upload section */
+.file-upload-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: var(--primary1);
+  display: flex; /* Use flexbox to center items */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 50vh; /* Adjust the height as needed */
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Headline styling */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* File input styling */
+input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+/* Custom file input styling */
+.custom-file-input {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-file-input:hover {
+  cursor: pointer;
+  background-color: #28a745; /* Change to your desired hover color */
+}
+
+/* Upload button styling */
+.upload-button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #28a745; /* Change to your desired button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background-color: #1e7e34; /* Change to your desired hover color */
+}
+
+/* Error message styling */
+.error-message {
+  color: var(--error); /* Red color for error messages */
+  margin-top: 10px;
+}
+.success-message {
+  color: var(--primary); /* Red color for error messages */
+  margin-top: 10px;
+}
+
+.selected-file {
+  color: var(--primary);
+  margin-top: 10px;
+}

@@ -1,0 +1,49 @@
+/* ColumnPage.css */
+
+.column-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 20px;
+  flex-wrap: nowrap; /* Prevent column wrapping */
+  overflow-x: auto; /* Add horizontal scrolling if needed */
+  background-color: white;
+}
+
+.column-container .column {
+  flex: 0 0 auto; /* Disable flex growth */
+  padding: 10px;
+  text-align: center;
+  margin-right: 10px;
+  min-width: 200px; /* Set a minimum width for each column */
+  position: relative; /* Position relative for pseudo-element */
+}
+
+.column::before,
+.column::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #ddd; /* Line color */
+}
+
+.column::before {
+  top: 0;
+
+  height: 1px; /* Horizontal line above the column */
+}
+
+.column::after {
+  bottom: 0;
+  height: 1px; /* Horizontal line below the column */
+}
+
+.column:last-child::after {
+  display: none; /* Hide the line below the last column */
+}
+
+.column h2 {
+  margin: 0;
+  font-size: 18px;
+  white-space: nowrap; /* Prevent column heading from wrapping */
+}

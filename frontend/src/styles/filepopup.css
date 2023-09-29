@@ -1,0 +1,116 @@
+/* CSS for Minor filepopup */
+:root {
+  --primary: #1aac83;
+  --btncolor: #1aac83;
+  --hoverbtn: #13765a;
+  --error: #e7195a;
+  --primary1: #fff;
+  --primary2: #333;
+}
+/* Base styles for the filepopup */
+.filepopup {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease;
+  z-index: 99999; /* Ensure the popup is on top of other elements */
+}
+
+.filepopup-inner {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  margin-right: 10px;
+  max-width: 80%; /* Adjust the maximum width as needed */
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.5s ease; /* Transition for entrance and exit */
+}
+
+/* Show the filepopup when isOpen is true */
+.filepopup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Center the filepopup */
+.filepopup.active .filepopup-inner {
+  transform: translate(-50%);
+}
+
+/* Close button styles */
+.filepopup-inner .btn-filepopup {
+  background-color: var(--btncolor);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filepopup-inner .btn-filepopup:hover {
+  background-color: var(--hoverbtn);
+}
+
+/* CSS for Mini Popup (Appears on Hover) */
+
+/* Base styles for the mini popup */
+.mini-popup {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  opacity: 0; /* Initially hidden */
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 9999; /* Ensure the mini popup is on top of other elements */
+}
+
+.mini-popup-inner {
+  background-color: #fff;
+  padding: 10px;
+  max-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  max-height: 200px;
+  overflow-y: auto;
+  transform: translateX(-120%);
+  transform: translateY(-125%);
+  right: -75%;
+}
+
+/* Show the mini popup when isOpen is true */
+.mini-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Position the mini popup below the trigger element */
+.mini-popup.active .mini-popup-inner {
+  position: absolute;
+  top: 50%; /* Position it just on the right of the trigger element */
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+/* Trigger element styles (e.g., button) */
+.trigger-button {
+  background-color: var(--primary1);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.trigger-button:hover {
+  background-color: #0056b3;
+}

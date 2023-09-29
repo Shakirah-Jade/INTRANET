@@ -1,0 +1,171 @@
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+  --primary1: #fff;
+  --primary2: #333;
+  --buttonhovering: #177c60;
+}
+/* src/components/Welcome.css */
+.carousel-container .first {
+  background-image: url("../images/shakinghands.jpg");
+}
+.carousel-container .second {
+  background-image: url("../images/checkingdocuments.jpg");
+  filter: brightness(90%);
+}
+.carousel-container .third {
+  background-image: url("../images/studyingdocuments.jpg");
+}
+
+.carousel-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.welcome {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  padding: 100px;
+
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+
+.header {
+  background-color: pink;
+  height: 150px;
+}
+
+.second .fullbody {
+  margin-left: 500px;
+  margin-right: 800px;
+  padding: 50px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.third .fullbody {
+  margin-left: 500px;
+  margin-right: 800px;
+  padding: 50px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.first .bigwords h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2a3855;
+}
+
+.first .smallwords p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #2a3855;
+  max-width: 600px;
+}
+
+.first .startbtn .show {
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 1;
+}
+
+.first .startbtn .show {
+  transform: translateY(100px);
+}
+
+.first .startbtn button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.first .startbtn button:hover {
+  background-color: var(--buttonhovering);
+}
+
+.second .bigwords h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1a253a;
+}
+
+.second .smallwords p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: black;
+  max-width: 600px;
+}
+
+.second .startbtn .show {
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 1;
+}
+
+.second .startbtn .show {
+  transform: translateY(100px);
+}
+
+.second .startbtn button {
+  background-color: var(--primary);
+  color: var(--primary1);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.second .startbtn button:hover {
+  background-color: var(--buttonhovering);
+}
+.third .bigwords h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1a253a;
+}
+
+.third .smallwords p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: black;
+  max-width: 600px;
+}
+
+.third .startbtn .show {
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 1;
+}
+
+.third .startbtn .show {
+  transform: translateY(100px);
+}
+
+.third .startbtn button {
+  background-color: var(--primary);
+  color: var(--primary1);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.third .startbtn button:hover {
+  background-color: var(--buttonhovering);
+}
